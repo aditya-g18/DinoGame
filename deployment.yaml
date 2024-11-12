@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: platformer-game
+  name: dino-game
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: platformer-game
+      app: dino-game
   template:
     metadata:
       labels:
-        app: platformer-game
+        app: dino-game
     spec:
       containers:
-      - name: platformer-game
-        image: your-dockerhub-username/platformer-game
+      - name: dino-game
+        image: your-dockerhub-username/dino-game
         ports:
         - containerPort: 8080

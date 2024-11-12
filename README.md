@@ -1,2 +1,2 @@
-# PlatformerGame
-Java-based platformer game
+# Dino Game
+Java-based Dino Game

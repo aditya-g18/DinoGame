@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: platformer-game
+  name: dino-game
 spec:
   type: LoadBalancer
   selector:
-    app: platformer-game
+    app: dino-game
   ports:
   - protocol: TCP
     port: 80

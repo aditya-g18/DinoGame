@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Clone') {
       steps {
-        git branch: 'main', url: 'https://github.com/your-username/PlatformerGame.git'
+        git branch: 'main', url: 'https://github.com/your-username/DinoGame.git'
       }
     }
     stage('Build') {
       steps {
-        sh 'docker build -t your-dockerhub-username/platformer-game .'
+        sh 'docker build -t your-dockerhub-username/dino-game .'
       }
     }
     stage('Test') {
@@ -21,7 +21,7 @@ pipeline {
       steps {
         withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
           sh 'docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD'
-          sh 'docker push your-dockerhub-username/platformer-game'
+          sh 'docker push your-dockerhub-username/dino-game'
         }
       }
     }

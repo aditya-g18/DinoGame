@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Compile the Java program
-RUN javac PlatformerGame.java
+RUN javac DinoGame.java
 
 # Run the application
-CMD ["java", "PlatformerGame"]
+CMD ["java", "DinoGame"]
