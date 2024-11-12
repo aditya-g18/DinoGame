@@ -16,4 +16,4 @@ spec:
       - name: dino-game
         image: your-dockerhub-username/dino-game
         ports:
-        - containerPort: 8080
+        - containerPort: 8081

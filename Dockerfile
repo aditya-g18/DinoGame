@@ -10,5 +10,8 @@ COPY . /app
 # Compile the Java program
 RUN javac DinoGame.java
 
-# Run the application
+# Expose the new port
+EXPOSE 8081
+
+# Run the application on the new port
 CMD ["java", "DinoGame"]
