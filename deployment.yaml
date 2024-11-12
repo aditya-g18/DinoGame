@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: platformer-game
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: platformer-game
+  template:
+    metadata:
+      labels:
+        app: platformer-game
+    spec:
+      containers:
+      - name: platformer-game
+        image: your-dockerhub-username/platformer-game
+        ports:
+        - containerPort: 8080
