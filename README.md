@@ -3,6 +3,6 @@ Dino-game/
 ├── DinoGame.java
 ├── DinoGame.java
 ├── Dockerfile 
-└── Jenkinsfile
-└── deployment.yaml
+├── Jenkinsfile
+├── deployment.yaml
 └── service.yaml
